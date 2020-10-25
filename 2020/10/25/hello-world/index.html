@@ -151,24 +151,94 @@
 </nav>
 
         <div id="main" >
-            <div class ="post_page_title_img" style="height: 25rem;background-image: url();background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
-                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >czmgzsy的第一篇博客</h2></a>
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url(https://github.com/czmgzsy/czmgzsy.github.io/blob/master/images/test2.jpg?raw=true);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >以Markdown语言创建博客并发布</h2></a>
             </div>
             <!-- Post -->
             <div class="typo" style="padding: 3rem;">
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+                <p><img src="https://github.com/czmgzsy/czmgzsy.github.io/blob/master/images/test2.jpg?raw=true" alt="WeChat icon"></p>
+<p>##将图片上传至GitHub，并使用网络路径导入.md文件</p>
+<p><a target="_blank" rel="noopener" href="https://www.baidu.com/">https:www.baidu.com</a></p>
+<p>1 Markown简介<br>Markdown 是一种轻量级标记语言,它允许人们使用易读易写的纯文本格式编写文档, 然后转换成格式丰富的HTML页面.</p>
+<p>2.语法<br>2.1 标题<br>在Markdown中,标题总共有六级. 只需要在文本前加上#即可,增加#时,标题字号相应降低.</p>
+<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><p>……</p>
+<h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><p>2.2链接和图片<br>在Markdown中,插入链接不需要其他按钮,你只需要使用<a href="%E9%93%BE%E6%8E%A5%E5%9C%B0%E5%9D%80">显示文本</a>这样的语法.eg:</p>
+<p>在Markdown中,插入图片不需要其他按钮, 你只需要 这样的语法即可.<br>eg:</p>
+<p>! <a target="_blank" rel="noopener" href="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1603636488971&di=ddb3845153962f4b243c18d937a6d591&imgtype=0&src=http://i2.hdslb.com/bfs/archive/03ad3b131f15cb021110c57475eaee782e928237.jpg">真香</a></p>
+<p>显示效果:真香诶！</p>
+<p>Markdown支持自动链接形式来处理网址和电子邮件信箱,只要是用尖括号包起来, Markdown就会自动把它转成链接.<br>例如: <a target="_blank" rel="noopener" href="http://www.baidu.com/">http:www.baidu.com</a><br>显示效果:<br>http:<a target="_blank" rel="noopener" href="http://www.baidu.com/">www.baidu.com</a></p>
+<p>2.3 粗体和斜体<br>用两个*包含一段文本就是粗体的语法, 用一个 * 包含一段文本就是斜体的语法.<br>eg:</p>
+<p>得即<em>高歌</em>失即休,多愁多恨亦悠悠,<strong>今朝有酒今朝醉</strong>,明日愁来明日忧.</p>
+<p>显示效果:<br>得即高歌 失即休,多愁多恨亦悠悠,今朝有酒今朝醉,明日愁来明日忧 .</p>
+<p>2.4 中文首行缩进<br>有两种方法可以实现:</p>
+<p>在段落开头的时候,先输入 : &#160;&#160;&#160;&#160;然后紧跟着输入文本即可<br>把输入法由半角改为全角. 两次空格之后就能够有两个汉字的缩进.<br>eg:首行缩进:<br>　　得到的</p>
+<p>2.5 代码块<br>将要显示的代码块放在 3对反引号 中间, CSDN提供的编译器支持不同的语法高亮, 只要在反引号后注明语言, 例如:</p>
+<p>package com.qx.aspectj.annotation;</p>
+<p>import org.springframework.stereotype.Service;</p>
+<p>@Service(“userService”)<br>public class UserServiceImpl implements UserService {</p>
+<pre><code>@Override
+public void addUser() &#123;
+    // TODO Auto-generated method stub</code></pre>
+<p>//      System.out.println(1/0);<br>        System.out.println(“addUser”);<br>    }</p>
+<pre><code>@Override
+public int deleteUser() &#123;
+    // TODO Auto-generated method stub
+    System.out.println(&quot;deleteUser&quot;);
+    return 0;
+&#125;</code></pre>
+<p>}</p>
+<p>2.6 引用<br>在你希望引用的文字前面加上&gt;就好了.<br>eg:</p>
+<blockquote>
+<p>Fate系列Saber壁纸(1/16) 关闭 播放 ZOL桌面壁纸有部分资源来源于互联网,图片版权归原作者所有,若有侵权问题敬请告知,我们会立即处理。本站图片资源如果没有特殊…<br>1<br>2<br>显示效果:</p>
+</blockquote>
+<p>Fate系列Saber壁纸(1/16) 关闭 播放 ZOL桌面壁纸有部分资源来源于互联网,图片版权归原作者所有,若有侵权问题敬请告知,我们会立即处理。本站图片资源如果没有特殊…</p>
+<p>2.7 水平滚动条<br>在代码块内,当一行的内容显示不下时,会自动显示水平滚动条</p>
+<p>package com.qx.demo05.jdk;</p>
+<p>import java.lang.reflect.InvocationHandler;<br>import java.lang.reflect.Method;<br>import java.lang.reflect.Proxy;</p>
+<p>public class MyBeanFactory {</p>
+<pre><code>public static UserService createService()&#123;
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+    //创建目标类对象
+    UserService userService=new UserServiceImpl();
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+    //切面类---我感觉它仅仅是个增强类
+    MyAspect myAdpect=new MyAspect();
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+    /**
+     * 使用jdk动态代理,创建代理类对象
+     * 参1 ClassLoader loader: 类加载器
+     *      MyBeanFactory.class.getClassLoader()
+     *      userService.getClass.getClassLoader()
+     * 参2 Class&lt;?&gt;[] interfaces:代理类实现的接口
+     *      userService.getClass().getInterfaces()
+     * 参3 InvocationHandler h: 匿名内部类,给目标方法添加事务
+     * 
+     */
+    /**
+     * 动态代理
+     *  在java动态代理中有一个重要的接口InvocationHandler和一个类Proxy.
+     * 
+     * 当我们调用具体被代理类的方法时,会转由这个接口中的invoke方法进行调用.我们可以理解为理类获得要调用的方法名和参数,交给InvocationHandler, 并由InvocationHandler中的invoke方法调用具体被代理类中相对应的方法.
+     * 参1: ClassLoader loader-定义代理类的类加载器
+     * 参2: Class&lt;?&gt;[] interfaces-代理类要实现的接口列表
+     * 参3: InvocationHandler h-指派方法调用的调用处理程序
+     * 返回值: 一个由指定的类加载器定义,并实现指定的接口的代理类的实例
+     */
+    UserService usService=(UserService) Proxy.newProxyInstance(userService.getClass().getClassLoader(),
+            userService.getClass().getInterfaces(),new InvocationHandler() &#123;
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+                @Override
+                public Object invoke(Object proxy, Method method, Object[] args) throws Throwable &#123;
+                    // TODO Auto-generated method stub
+                    myAdpect.before();
+                    Object obj=method.invoke(userService, args);
+                    myAdpect.after();</code></pre>
+<p>//                      System.out.println(proxy instanceof UserService);//true<br>//                      System.out.println(proxy instanceof InvocationHandler);//false<br>//                      System.out.println(obj instanceof InvocationHandler);//false<br>                        System.out.println(obj);<br>                        return obj;<br>                    }<br>                });</p>
+<pre><code>    return usService;  //应该返回代理对象usService, 而不要返回被代理对象userService
+
+
+&#125;</code></pre>
+<p>}</p>
 
             </div>
 
