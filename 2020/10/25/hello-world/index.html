@@ -157,88 +157,95 @@
             <!-- Post -->
             <div class="typo" style="padding: 3rem;">
                 <p><img src="https://github.com/czmgzsy/czmgzsy.github.io/blob/master/images/test2.jpg?raw=true" alt="WeChat icon"></p>
-<p>##将图片上传至GitHub，并使用网络路径导入.md文件</p>
-<p><a target="_blank" rel="noopener" href="https://www.baidu.com/">https:www.baidu.com</a></p>
-<p>1 Markown简介<br>Markdown 是一种轻量级标记语言,它允许人们使用易读易写的纯文本格式编写文档, 然后转换成格式丰富的HTML页面.</p>
-<p>2.语法<br>2.1 标题<br>在Markdown中,标题总共有六级. 只需要在文本前加上#即可,增加#时,标题字号相应降低.</p>
-<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><p>……</p>
-<h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><p>2.2链接和图片<br>在Markdown中,插入链接不需要其他按钮,你只需要使用<a href="%E9%93%BE%E6%8E%A5%E5%9C%B0%E5%9D%80">显示文本</a>这样的语法.eg:</p>
-<p>在Markdown中,插入图片不需要其他按钮, 你只需要 这样的语法即可.<br>eg:</p>
-<p><img src="https://github.com/czmgzsy/czmgzsy.github.io/blob/master/images/test3.jpg?raw=true" alt="真香"></p>
-<p>显示效果:真香诶！</p>
-<p>Markdown支持自动链接形式来处理网址和电子邮件信箱,只要是用尖括号包起来, Markdown就会自动把它转成链接.<br>例如: <a target="_blank" rel="noopener" href="http://www.baidu.com/">http:www.baidu.com</a><br>显示效果:<br>http:<a target="_blank" rel="noopener" href="http://www.baidu.com/">www.baidu.com</a></p>
-<p>2.3 粗体和斜体<br>用两个*包含一段文本就是粗体的语法, 用一个 * 包含一段文本就是斜体的语法.<br>eg:</p>
-<p>得即<em>高歌</em>失即休,多愁多恨亦悠悠,<strong>今朝有酒今朝醉</strong>,明日愁来明日忧.</p>
-<p>显示效果:<br>得即高歌 失即休,多愁多恨亦悠悠,今朝有酒今朝醉,明日愁来明日忧 .</p>
-<p>2.4 中文首行缩进<br>有两种方法可以实现:</p>
-<p>在段落开头的时候,先输入 : &#160;&#160;&#160;&#160;然后紧跟着输入文本即可<br>把输入法由半角改为全角. 两次空格之后就能够有两个汉字的缩进.<br>eg:首行缩进:<br>　　得到的</p>
-<p>2.5 代码块<br>将要显示的代码块放在 3对反引号 中间, CSDN提供的编译器支持不同的语法高亮, 只要在反引号后注明语言, 例如:</p>
-<p>package com.qx.aspectj.annotation;</p>
-<p>import org.springframework.stereotype.Service;</p>
-<p>@Service(“userService”)<br>public class UserServiceImpl implements UserService {</p>
-<pre><code>@Override
-public void addUser() &#123;
-    // TODO Auto-generated method stub</code></pre>
-<p>//      System.out.println(1/0);<br>        System.out.println(“addUser”);<br>    }</p>
-<pre><code>@Override
-public int deleteUser() &#123;
-    // TODO Auto-generated method stub
-    System.out.println(&quot;deleteUser&quot;);
-    return 0;
-&#125;</code></pre>
-<p>}</p>
-<p>2.6 引用<br>在你希望引用的文字前面加上&gt;就好了.<br>eg:</p>
+<p>Markdown 是一种轻量级标记语言，它允许人们使用易读易写的纯文本格式编写文档。<br>Markdown 编写的文档后缀为.md , .markdown</p>
+<h1 id="Markdown-标题"><a href="#Markdown-标题" class="headerlink" title="Markdown 标题"></a>Markdown 标题</h1><h3 id="Markdown-标题有两种格式"><a href="#Markdown-标题有两种格式" class="headerlink" title="Markdown 标题有两种格式"></a>Markdown 标题有两种格式</h3><h4 id="1、使用-和-标记一级和二级标题"><a href="#1、使用-和-标记一级和二级标题" class="headerlink" title="1、使用 = 和 - 标记一级和二级标题"></a>1、使用 = 和 - 标记一级和二级标题</h4><h1 id="这是一级标题"><a href="#这是一级标题" class="headerlink" title="这是一级标题"></a>这是一级标题</h1><h2 id="这是二级标题"><a href="#这是二级标题" class="headerlink" title="这是二级标题"></a>这是二级标题</h2><h4 id="2、使用-号标记"><a href="#2、使用-号标记" class="headerlink" title="2、使用 # 号标记"></a>2、使用 # 号标记</h4><p>使用 # 号可以表示 1-6 级标题，一级标题对应一个 # 号，二级标题对应两个 # 号，依此类推</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># 一级标题</span><br><span class="line">## 二级标题</span><br><span class="line">### 三级标题</span><br><span class="line">#### 四级标题</span><br><span class="line">##### 五级标题</span><br><span class="line">###### 六级标题</span><br></pre></td></tr></table></figure>
+
+<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><h1 id="Markdown-段落"><a href="#Markdown-段落" class="headerlink" title="Markdown 段落"></a>Markdown 段落</h1><p>Markdown 段落没有特殊的格式，直接编辑文字就好，段落的换行是使用两个以上空格加上回车  </p>
+<h1 id="Markdown-字体"><a href="#Markdown-字体" class="headerlink" title="Markdown 字体"></a>Markdown 字体</h1><p>Markdown 可以使用以下几种字体</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">*斜体文本*</span><br><span class="line">_斜体文本_</span><br><span class="line">**粗体文本**</span><br><span class="line">__粗体文本__</span><br><span class="line">***粗斜体文本***</span><br><span class="line">___粗斜体文本___</span><br></pre></td></tr></table></figure>
+<p><em>斜体文本</em><br><em>斜体文本</em><br><strong>粗体文本</strong><br><strong>粗体文本</strong><br><strong><em>粗斜体文本</em></strong><br><strong><em>粗斜体文本</em></strong></p>
+<h1 id="分隔线"><a href="#分隔线" class="headerlink" title="分隔线"></a>分隔线</h1><p>你可以在一行中用三个以上的星号、减号、底线来建立一个分割线，行内不能有其它东西。你也可以在星号或是减号中间插入空格。下面每种写法都可以建立分隔线：</p>
+<hr>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">***</span><br><span class="line"></span><br><span class="line">* * *</span><br><span class="line"></span><br><span class="line">*****</span><br><span class="line"></span><br><span class="line">- - -</span><br><span class="line"></span><br><span class="line">----------</span><br></pre></td></tr></table></figure>
+
+<h1 id="删除线"><a href="#删除线" class="headerlink" title="删除线"></a>删除线</h1><p>如果段落上的文字要添加删除线，只需要在文字的两端加上两个波浪线 ~~ 即可，实例如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">这里展示的是删除线</span><br><span class="line">~~这里展示的是删除线~~</span><br></pre></td></tr></table></figure>
+<p>这里展示的是删除线<br><del>这里展示的是删除线</del></p>
+<h1 id="下划线"><a href="#下划线" class="headerlink" title="下划线"></a>下划线</h1><p>下划线可以通过 HTML 的 <code>&lt;u&gt;</code> 标签来实现：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;u&gt;这里展示的是含有下划线的文本&lt;&#x2F;u&gt; </span><br></pre></td></tr></table></figure>
+<p><u>这里展示的是含有下划线的文本</u> </p>
+<h1 id="Markdown-列表"><a href="#Markdown-列表" class="headerlink" title="Markdown 列表"></a>Markdown 列表</h1><p>Markdown 支持有序列表和无序列表<br>无序列表使用星号*、加号+或是减号-作为列表标记，这些标记后面要添加一个空格，如何再填写内容：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">* 第一项</span><br><span class="line">* 第二项</span><br><span class="line">* 第三项</span><br><span class="line"></span><br><span class="line">+ 第一项</span><br><span class="line">+ 第二项</span><br><span class="line">+ 第三项</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">- 第一项</span><br><span class="line">- 第二项</span><br><span class="line">- 第三项</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>第一项</li>
+<li>第二项</li>
+<li>第三项</li>
+</ul>
+<ul>
+<li>第一项</li>
+<li>第二项</li>
+<li>第三项</li>
+</ul>
+<ul>
+<li>第一项</li>
+<li>第二项</li>
+<li>第三项</li>
+</ul>
+<h4 id="有序列表使用数字并加上-号来表示，如："><a href="#有序列表使用数字并加上-号来表示，如：" class="headerlink" title="有序列表使用数字并加上 . 号来表示，如："></a>有序列表使用数字并加上 . 号来表示，如：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1. 第一项</span><br><span class="line">2. 第二项</span><br><span class="line">3. 第三项</span><br></pre></td></tr></table></figure>
+<ol>
+<li>第一项</li>
+<li>第二项</li>
+<li>第三项</li>
+</ol>
+<h4 id="列表嵌套只需要在子列表中的选项前添加四个空格即可："><a href="#列表嵌套只需要在子列表中的选项前添加四个空格即可：" class="headerlink" title="列表嵌套只需要在子列表中的选项前添加四个空格即可："></a>列表嵌套只需要在子列表中的选项前添加四个空格即可：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">1. 第一项：</span><br><span class="line">    - 第一项嵌套的第一个元素</span><br><span class="line">    - 第一项嵌套的第二个元素</span><br><span class="line">2. 第二项：</span><br><span class="line">    - 第二项嵌套的第一个元素</span><br><span class="line">    - 第二项嵌套的第二个元素</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>第一项：<ul>
+<li>第一项嵌套的第一个元素</li>
+<li>第一项嵌套的第二个元素</li>
+</ul>
+</li>
+<li>第二项：<ul>
+<li>第二项嵌套的第一个元素</li>
+<li>第二项嵌套的第二个元素</li>
+</ul>
+</li>
+</ol>
+<h1 id="Markdown-区块"><a href="#Markdown-区块" class="headerlink" title="Markdown 区块"></a>Markdown 区块</h1><p>Markdown区块使用的是<code>&gt;</code>号，然后后面紧跟一个<strong>空格</strong>符号：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt; 区块1</span><br><span class="line">&gt; 区块2</span><br><span class="line">&gt; 区块3</span><br></pre></td></tr></table></figure>
 <blockquote>
-<p>Fate系列Saber壁纸(1/16) 关闭 播放 ZOL桌面壁纸有部分资源来源于互联网,图片版权归原作者所有,若有侵权问题敬请告知,我们会立即处理。本站图片资源如果没有特殊…<br>1<br>2<br>显示效果:</p>
+<p>区块1<br>区块2<br>区块3</p>
 </blockquote>
-<p>Fate系列Saber壁纸(1/16) 关闭 播放 ZOL桌面壁纸有部分资源来源于互联网,图片版权归原作者所有,若有侵权问题敬请告知,我们会立即处理。本站图片资源如果没有特殊…</p>
-<p>2.7 水平滚动条<br>在代码块内,当一行的内容显示不下时,会自动显示水平滚动条</p>
-<p>package com.qx.demo05.jdk;</p>
-<p>import java.lang.reflect.InvocationHandler;<br>import java.lang.reflect.Method;<br>import java.lang.reflect.Proxy;</p>
-<p>public class MyBeanFactory {</p>
-<pre><code>public static UserService createService()&#123;
+<h4 id="区块是可以被嵌套的，一个-gt-符号是最外层，两个-gt-gt-是第一层的嵌套，以此类推，注意空格的使用！"><a href="#区块是可以被嵌套的，一个-gt-符号是最外层，两个-gt-gt-是第一层的嵌套，以此类推，注意空格的使用！" class="headerlink" title="区块是可以被嵌套的，一个&gt; 符号是最外层，两个&gt; &gt; 是第一层的嵌套，以此类推，注意空格的使用！"></a>区块是可以被嵌套的，一个&gt; 符号是最外层，两个&gt; &gt; 是第一层的嵌套，以此类推，注意空格的使用！</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt; 最外层</span><br><span class="line">&gt; &gt; 第一层嵌套</span><br><span class="line">&gt; &gt; &gt; 第二层嵌套</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>最外层</p>
+<blockquote>
+<p>第一层嵌套</p>
+<blockquote>
+<p>第二层嵌套</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<h1 id="Markdown-代码"><a href="#Markdown-代码" class="headerlink" title="Markdown 代码"></a>Markdown 代码</h1><p>如果是段落上的一个函数或片段的代码可以用飘号``把它包起来，例如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#96;print()&#96;函数</span><br></pre></td></tr></table></figure>
+<p><code>print()</code>函数</p>
+<h4 id="代码区块"><a href="#代码区块" class="headerlink" title="代码区块"></a>代码区块</h4><p>代码区块使用4个空格或者一个制表符（Tab键）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">print(&quot;这里是代码区块&quot;)</span><br><span class="line">print(&quot;前面有制表符&quot;)</span><br></pre></td></tr></table></figure>
+<pre><code>print(&quot;这里是代码区块&quot;)
+print(&quot;前面有制表符&quot;)</code></pre>
+<h4 id="你也可以使用-包裹一段代码，并指定一种语言（也可以不指定）："><a href="#你也可以使用-包裹一段代码，并指定一种语言（也可以不指定）：" class="headerlink" title="你也可以使用```包裹一段代码，并指定一种语言（也可以不指定）："></a>你也可以使用```包裹一段代码，并指定一种语言（也可以不指定）：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(&quot;这里是使用了3个飘号的代码区块&quot;)</span><br></pre></td></tr></table></figure>
+<h1 id="Markdown-链接"><a href="#Markdown-链接" class="headerlink" title="Markdown 链接"></a>Markdown 链接</h1><h4 id="链接的使用方法1："><a href="#链接的使用方法1：" class="headerlink" title="链接的使用方法1："></a>链接的使用方法1：</h4><pre><code>[链接名称](链接地址)
 
-    //创建目标类对象
-    UserService userService=new UserServiceImpl();
+或者
 
-    //切面类---我感觉它仅仅是个增强类
-    MyAspect myAdpect=new MyAspect();
-
-    /**
-     * 使用jdk动态代理,创建代理类对象
-     * 参1 ClassLoader loader: 类加载器
-     *      MyBeanFactory.class.getClassLoader()
-     *      userService.getClass.getClassLoader()
-     * 参2 Class&lt;?&gt;[] interfaces:代理类实现的接口
-     *      userService.getClass().getInterfaces()
-     * 参3 InvocationHandler h: 匿名内部类,给目标方法添加事务
-     * 
-     */
-    /**
-     * 动态代理
-     *  在java动态代理中有一个重要的接口InvocationHandler和一个类Proxy.
-     * 
-     * 当我们调用具体被代理类的方法时,会转由这个接口中的invoke方法进行调用.我们可以理解为理类获得要调用的方法名和参数,交给InvocationHandler, 并由InvocationHandler中的invoke方法调用具体被代理类中相对应的方法.
-     * 参1: ClassLoader loader-定义代理类的类加载器
-     * 参2: Class&lt;?&gt;[] interfaces-代理类要实现的接口列表
-     * 参3: InvocationHandler h-指派方法调用的调用处理程序
-     * 返回值: 一个由指定的类加载器定义,并实现指定的接口的代理类的实例
-     */
-    UserService usService=(UserService) Proxy.newProxyInstance(userService.getClass().getClassLoader(),
-            userService.getClass().getInterfaces(),new InvocationHandler() &#123;
-
-                @Override
-                public Object invoke(Object proxy, Method method, Object[] args) throws Throwable &#123;
-                    // TODO Auto-generated method stub
-                    myAdpect.before();
-                    Object obj=method.invoke(userService, args);
-                    myAdpect.after();</code></pre>
-<p>//                      System.out.println(proxy instanceof UserService);//true<br>//                      System.out.println(proxy instanceof InvocationHandler);//false<br>//                      System.out.println(obj instanceof InvocationHandler);//false<br>                        System.out.println(obj);<br>                        return obj;<br>                    }<br>                });</p>
-<pre><code>    return usService;  //应该返回代理对象usService, 而不要返回被代理对象userService
-
-
-&#125;</code></pre>
-<p>}</p>
+&lt;链接地址&gt;</code></pre>
+<p>例如：</p>
+<pre><code>这是一个链接 [百度](https://www.baidu.com)    </code></pre>
+<p>这是一个链接 <a target="_blank" rel="noopener" href="https://www.baidu.com/">百度</a></p>
+<h4 id="链接的使用方法2："><a href="#链接的使用方法2：" class="headerlink" title="链接的使用方法2："></a>链接的使用方法2：</h4><pre><code>&lt;https://www.baidu.com&gt;</code></pre>
+<p><a target="_blank" rel="noopener" href="https://www.baidu.com/">https://www.baidu.com</a></p>
 
             </div>
 
